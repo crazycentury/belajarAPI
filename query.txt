@@ -1,0 +1,17 @@
+CREATE TABLE Users(
+	pk_id INT IDENTITY PRIMARY KEY,
+	[name] VARCHAR (255)
+);
+
+CREATE TABLE Tasks(
+	pk_tasks_id INT IDENTITY PRIMARY KEY NOT NULL,
+	task_detail VARCHAR(MAX) NOT NULL,
+	fk_user_id INT NOT NULL
+
+);
+
+ALTER table Users 
+ALTER COLUMN [name] VARCHAR (255) NOT NULL;
+
+SELECT * FROM  Users;
+SELECT * FROM Tasks;
