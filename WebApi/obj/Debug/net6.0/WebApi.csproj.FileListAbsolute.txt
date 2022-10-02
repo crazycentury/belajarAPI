@@ -31,3 +31,15 @@
 /Users/work/Documents/WebApi/WebApi/obj/Debug/net6.0/WebApi.pdb
 /Users/work/Documents/WebApi/WebApi/obj/Debug/net6.0/WebApi.genruntimeconfig.cache
 /Users/work/Documents/WebApi/WebApi/obj/Debug/net6.0/ref/WebApi.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Abstractions.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Logging.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Tokens.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/System.IdentityModel.Tokens.Jwt.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Microsoft.Extensions.DependencyModel.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Scrutor.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll

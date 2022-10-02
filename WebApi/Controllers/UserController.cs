@@ -80,13 +80,7 @@ namespace WebApi.Controllers
 
 
 
-        //    public ActionResult GetUsers()
-        //    {
-        //        List<UserModel> result = new List<UserModel>();
-        //        DataTable dataTable = new DataTable();
-        //        string query = "SELECT * FROM Users;";
-
-        //        using
+        
     }
 
 
