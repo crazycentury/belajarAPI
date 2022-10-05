@@ -43,3 +43,6 @@
 /Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Scrutor.dll
 /Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.dll
 /Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/Swashbuckle.AspNetCore.Filters.Abstractions.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/MailKit.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/MimeKit.dll
+/Users/work/Documents/WebApi/WebApi/bin/Debug/net6.0/BouncyCastle.Crypto.dll

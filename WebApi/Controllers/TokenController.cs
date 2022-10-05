@@ -16,52 +16,52 @@ namespace WebApi.Controllers
     [ApiController]
     public class TokenController : Controller
     {
-        private readonly IConfiguration _configuration;
-        public TokenController(IConfiguration configuration)
-        {
-            _configuration = configuration;
-        }
+        //private readonly IConfiguration _configuration;
+        //public TokenController(IConfiguration configuration)
+        //{
+        //    _configuration = configuration;
+        //}
 
-        [HttpGet]
-        [Route("GenerateToken")]
-        public ActionResult GenerateToken()
-        {
+        //[HttpGet]
+        //[Route("GenerateToken")]
+        //public ActionResult GenerateToken()
+        //{
             
-            string jwtToken = CreateToken();
-            // logic to create token
-            return Ok(jwtToken);
-        }
-        [HttpGet]
-        [Route("ValidateToken")]
-        [Authorize]
-        public ActionResult ValidateToken()
-        {
+        //    string jwtToken = CreateToken();
+        //    // logic to create token
+        //    return Ok(jwtToken);
+        //}
+        //[HttpGet]
+        //[Route("ValidateToken")]
+        //[Authorize]
+        //public ActionResult ValidateToken()
+        //{
           
-            return Ok("Congrats, your token is right!");
-        }
+        //    return Ok("Congrats, your token is right!");
+        //}
 
 
-        public string CreateToken()
-        {
-            List<Claim> claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, "string")
-            };
+        //public string CreateToken()
+        //{
+        //    List<Claim> claims = new List<Claim>
+        //    {
+        //        new Claim(ClaimTypes.Name, "string")
+        //    };
 
-            var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
-                _configuration.GetSection("Jwt:Token").Value));
+        //    var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(
+        //        _configuration.GetSection("Jwt:Token").Value));
 
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
+        //    var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha512Signature);
 
-            var token = new JwtSecurityToken(
-                claims: claims,
-                expires: DateTime.Now.AddDays(1),
-                signingCredentials: creds);
+        //    var token = new JwtSecurityToken(
+        //        claims: claims,
+        //        expires: DateTime.Now.AddDays(1),
+        //        signingCredentials: creds);
 
-            var jwt = new JwtSecurityTokenHandler().WriteToken(token);
+        //    var jwt = new JwtSecurityTokenHandler().WriteToken(token);
 
-            return jwt;
-        }
+        //    return jwt;
+        //}
 
         //public IEnumerable<Claim>? ValidateJwtToken(string token)
         //{

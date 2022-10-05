@@ -13,6 +13,7 @@
     <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.23.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.9" />
     <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="7.0.5" />
+    <PackageReference Include="MailKit" Version="3.4.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,9 +24,12 @@
     <None Remove="System.IdentityModel.Tokens.Jwt" />
     <None Remove="Microsoft.AspNetCore.Authentication.JwtBearer" />
     <None Remove="Swashbuckle.AspNetCore.Filters" />
+    <None Remove="MailKit" />
+    <None Remove="Services\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Logics\" />
     <Folder Include="Models\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 </Project>

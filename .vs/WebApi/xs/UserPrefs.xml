@@ -1,12 +1,18 @@
 ﻿<Properties StartupConfiguration="{B6E8AC7B-8DFD-41DC-8803-13D6FAC22CE4}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Controllers/UserController.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="WebApi/Controllers/EmailController.cs">
     <Files>
-      <File FileName="WebApi/Controllers/UserController.cs" Line="37" Column="1" />
-      <File FileName="WebApi/Controllers/DBController.cs" Line="14" Column="6" />
-      <File FileName="WebApi/Models/CRUD.cs" Line="18" Column="1" />
-      <File FileName="WebApi/Logics/DBLogic.cs" Line="66" Column="48" />
-      <File FileName="WebApi/Models/Task.cs" Line="7" Column="25" />
-      <File FileName="WebApi/Program.cs" Line="25" Column="1" />
+      <File FileName="WebApi/Logics/DBLogic.cs" Line="17" Column="10" />
+      <File FileName="WebApi/Program.cs" Line="22" Column="8" />
+      <File FileName="WebApi/appsettings.json" Line="17" Column="1" />
+      <File FileName="WebApi/Controllers/WeatherForecastController.cs" Line="1" Column="1" />
+      <File FileName="WebApi/Controllers/UserController.cs" Line="79" Column="19" />
+      <File FileName="WebApi/Controllers/EmailController.cs" Line="14" Column="43" />
+      <File FileName="WebApi/Controllers/TokenController.cs" Line="64" Column="12" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,7 +20,7 @@
           <Node name="WebApi" expanded="True">
             <Node name="WebApi" expanded="True">
               <Node name="Controllers" expanded="True">
-                <Node name="UserController.cs" selected="True" />
+                <Node name="EmailController.cs" selected="True" />
               </Node>
               <Node name="Logics" expanded="True" />
               <Node name="Models" expanded="True" />
@@ -27,11 +33,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
