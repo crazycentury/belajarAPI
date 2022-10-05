@@ -13,7 +13,7 @@ namespace WebApi.Services
         public void SendEmail(EmailDTO notes)
         {
             var email = new MimeMessage();
-            email.From.Add(MailboxAddress.Parse("crazycentury001@gmail.com"));
+            email.From.Add(MailboxAddress.Parse());
             email.To.Add(MailboxAddress.Parse(notes.To));
             email.Subject = "Daily Notes";
 
@@ -23,7 +23,7 @@ namespace WebApi.Services
             //Kirim email
             using var smtp = new SmtpClient();
             smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("crazycentury001@gmail.com", "okxqqdfelyteitkk");
+            smtp.Authenticate();
             smtp.Send(email);
             smtp.Disconnect(true);
         }
