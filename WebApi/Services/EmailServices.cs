@@ -2,6 +2,7 @@
 using MailKit.Net.Smtp;
 using MailKit.Security;
 using MimeKit;
+using Org.BouncyCastle.Utilities;
 using WebApi.Models;
 
 namespace WebApi.Services
@@ -9,21 +10,15 @@ namespace WebApi.Services
     public class EmailServices : IEmailServices
     {
 
-        public void SendEmail(EmailDTO request)
+        public void SendEmail(EmailDTO notes)
         {
             var email = new MimeMessage();
             email.From.Add(MailboxAddress.Parse("crazycentury001@gmail.com"));
-            email.To.Add(MailboxAddress.Parse(request.To));
+            email.To.Add(MailboxAddress.Parse(notes.To));
             email.Subject = "Daily Notes";
 
             //string isi = String.Join(",",request.Body);
-            email.Body = new TextPart(MimeKit.Text.TextFormat.Html)
-            {
-                Text = "<div style='width:350px; height:200px; border: 1px solid black; padding:10px 15px 10px 15px;'> " +
-                "<h3 style='text-align:center;'>DailyNotes<h3>" +
-                request.Body +
-                "</div>"
-            };
+            email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = notes.EmailBody() };
 
             //Kirim email
             using var smtp = new SmtpClient();
